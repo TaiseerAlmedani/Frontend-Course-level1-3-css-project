@@ -30,10 +30,19 @@
   <div class="hero-section">
     <div class="hero-content">
       <p>We Are</p>
-      <p class="typing-letter">happy to see you</p>
+      <span id="animaited-text"></span>
     </div>
     <img src="http://homework.webmyidea.com/assets/images/hero-img.png" alt="hero img">
   </div>
   <!-- End Of Hero Section -->
+
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#animaited-text', {
+      strings: ['Happy to see you','Alwayse on top', 'A great team','Best seo Agency'],
+      typeSpeed: 50,
+      loop: true,
+    });
+  </script>
 </body>
 </html>
