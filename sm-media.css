@@ -25,3 +25,17 @@
     width: 100%;
     margin-bottom: 50px;
   }
+  .search-container{
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .search-container > *{
+    width: 100%;
+  }
+.case-study-grid-container{
+  grid-template-columns: 1fr;
+}
+.item{
+  width: 80%;
+  margin: 0 auto;
+}

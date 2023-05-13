@@ -16,6 +16,7 @@ body{
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 4;
 }
 .logo img{
   width: 40px;
@@ -75,12 +76,13 @@ opacity: .7;
 .services-section{
   padding: 100px 0;
 }
-.services-section h1{
+.services-section h1, .case-study-section h1{
   text-align: center;
   margin:60px 0;
   font-size: 60px;
 }
-.services-section h1::after{
+
+.services-section h1::after, .search-content h1::after, .case-study-section h1::after{
   content: '';
   display: block;
   width: 15%;
@@ -88,6 +90,10 @@ opacity: .7;
   height: 3px;
   background: rgb(99,132,240);
   background: linear-gradient(90deg, rgba(99,132,240,1) 0%, rgba(99,132,240,1) 83%, rgba(255,255,255,1) 83%, rgba(255,255,255,1) 91%, rgba(99,132,240,1) 91%, rgba(99,132,240,1) 100%);
+}
+.search-content h1::after{
+  width: 30%;
+  margin: 30px 0 20px;
 }
 .cards{
   max-width: 1200px;
@@ -114,6 +120,94 @@ opacity: .7;
   width: 150px;
 }
 
+/*? search-engine-container */
+.search-content p{
+  text-align: left;
+  margin:20px 0 60px;
+  font-size: 18px;
+}
+.search-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+.search-content a{
+  text-decoration: none;
+  color: #6384FF;
+  padding: 12px 20px;
+  font-weight: 500;
+  border: solid 1px #6384FF;
+  transition: all 500ms;
+}
+.search-content a:hover{
+background-color: #6384FF;
+color: white;
+}
+.case-study-grid-container{
+  max-width: 1200px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+.item{
+  position: relative;
+}
+.item img{
+  width: 100%;
+  height: 100%;
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  opacity: 0;
+}
+.overlay p:first-child::before{
+  display: block;
+  content: '';
+  width: 70%;
+  margin: 0 auto;
+  height: 2px;
+  background-color: white;
+  position: relative;
+  top: -50px;
+  transition: all 300ms;
+}
+.overlay p:first-child::after{
+  display: block;
+  content: '';
+  width: 70%;
+  margin: 0 auto;
+  height: 2px;
+  background-color: white;
+  position: relative;
+  bottom: -75px;
+  transition: all 300ms;
+}
+.overlay:hover p:first-child::before{
+  top: -25px;
+}
+.overlay:hover p:first-child::after{
+  bottom: -50px;
+}
+.item:hover .overlay{
+  opacity: 1;
+}
+.overlay p:nth-child(2){
+  color: #6384FF;
+}
 /* hr{
   width: 10%;
   margin: 50px auto;
