@@ -30,7 +30,7 @@ body{
   align-items: center;
   gap: 10px;
 }
-ul{
+.navbar ul{
 display: flex;
 align-items: center;
 gap: 15px;
@@ -145,6 +145,8 @@ opacity: .7;
 background-color: #6384FF;
 color: white;
 }
+
+/*? case study section */
 .case-study-grid-container{
   max-width: 1200px;
   margin: 100px auto;
@@ -208,11 +210,62 @@ color: white;
 .overlay p:nth-child(2){
   color: #6384FF;
 }
-/* hr{
-  width: 10%;
-  margin: 50px auto;
-  height: 4px;
-  background: rgb(99,132,240);
-background: linear-gradient(90deg, rgba(99,132,240,1) 0%, rgba(99,132,240,1) 83%, rgba(255,255,255,1) 83%, rgba(255,255,255,1) 91%, rgba(99,132,240,1) 91%, rgba(99,132,240,1) 100%);
-} */
 
+
+/*? pricing section */
+.pricing-container{
+  max-width: 1200px;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+}
+
+.card-top{
+  background-color: rgba(255, 166, 0, 0.352);
+  text-align: center;
+  position: relative;
+}
+.card-top h1{
+  padding: 60px 0 100px;
+}
+
+.card-top::before,.card-top::after{
+  content: '';
+  display: block;
+  width: 250px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+}
+.card-top::before{
+
+  bottom: -75%;
+  left: -5%;
+}
+.card-top::after{
+  bottom: -60%;
+  right: -5%;
+}
+.pricing-card ul li, .card-top .price{
+  position: relative;
+  z-index: 3;
+}
+ .price{
+  width: 30%;
+  aspect-ratio: 1;
+  position: absolute !important;
+  border: solid 10px rgba(96, 94, 94, 0.2);
+  left: 50%;
+  top: 60%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  /* background-color: rgba(65, 105, 225, 0.116); */
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+}
