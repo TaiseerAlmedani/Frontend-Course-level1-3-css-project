@@ -79,7 +79,8 @@ body {
 }
 .services-section h1,
 .case-study-section h1,
-.pricing-section h1 {
+.pricing-section h1,
+.team-memeber-section h1 {
   text-align: center;
   margin: 60px 0;
   font-size: 60px;
@@ -88,7 +89,8 @@ body {
 .services-section h1::after,
 .search-content h1::after,
 .case-study-section h1::after,
-.pricing-section h1::after {
+.pricing-section h1::after,
+.team-memeber-section h1::after {
   content: "";
   display: block;
   width: 15%;
@@ -343,4 +345,30 @@ body {
 .pricing-card:nth-of-type(3):hover .price{
   background-color: green;
   color: white;
+}
+/*? team member section */
+.memebers{
+  max-width: 1200px;
+  margin: 18px auto;
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  gap: 30px;
+}
+.team-memeber-section p{
+  text-align: center;
+}
+.team-memeber-section h1::after{
+  margin-bottom: 0;
+}
+.memeber{
+text-align: center;
+}
+.memeber img{
+  width: 100%;
+}
+.memeber:hover{
+box-shadow: 0 0 15px 0 #5d5e61;
+}
+.memeber p{
+  margin-bottom: 24px;
 }

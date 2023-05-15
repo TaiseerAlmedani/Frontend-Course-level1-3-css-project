@@ -45,3 +45,9 @@
 .pricing-card:not(:last-child){
 margin-bottom: 30px;
 }
+.memebers{
+  grid-template-columns: 1fr;
+}
+.memeber{
+  padding: 0   30px;
+}
