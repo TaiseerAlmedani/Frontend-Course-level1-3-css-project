@@ -372,3 +372,29 @@ box-shadow: 0 0 15px 0 #5d5e61;
 .memeber p{
   margin-bottom: 24px;
 }
+/*? .copanies section */
+.companies-section{
+  background-color: whitesmoke;
+}
+.companies{
+  max-width: 960px;
+   margin: 100px auto 200px;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+  }
+  .company img{
+    margin-right: 100px;
+  }
+  .company{
+    padding: 20px 0;
+    animation: slider 3s ease-in-out alternate infinite;
+}
+@keyframes slider {
+  from{
+    transform: translateX(-250px);
+  }
+  to{
+    transform: translateX(100px);
+  }
+}
