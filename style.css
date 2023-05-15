@@ -80,7 +80,8 @@ body {
 .services-section h1,
 .case-study-section h1,
 .pricing-section h1,
-.team-memeber-section h1 {
+.team-memeber-section h1,
+.testemoinal-section h1 {
   text-align: center;
   margin: 60px 0;
   font-size: 60px;
@@ -90,7 +91,8 @@ body {
 .search-content h1::after,
 .case-study-section h1::after,
 .pricing-section h1::after,
-.team-memeber-section h1::after {
+.team-memeber-section h1::after,
+.testemoinal-section h1::after {
   content: "";
   display: block;
   width: 15%;
@@ -397,4 +399,56 @@ box-shadow: 0 0 15px 0 #5d5e61;
   to{
     transform: translateX(100px);
   }
+}
+
+/*? testemonial section */
+.testemoinal-container{
+  max-width: 1200px;
+  margin: 150px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.cloud{
+  position: relative;
+  color: white;
+  font-weight: 500;
+  line-height: 3;
+}
+.cloud .top{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 255, 0.364);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50%;
+  z-index: -1;
+}
+.cloud .top::before{
+content: '\f10d';
+display: block;
+font-family: FontAwesome;
+color: white;
+font-size: 50px;
+line-height: 100px;
+text-align: center;
+width: 100%;
+}
+.cloud .bottom{
+  height: 205px;
+  padding: 34px 40px 40px 40px;
+  background-color: blue;
+  border-radius: 120px;
+}
+.cloud:nth-of-type(1) .top, .cloud:nth-of-type(1) .bottom{
+  background-color: orange;
+}
+.cloud:nth-of-type(2) .top, .cloud:nth-of-type(2) .bottom{
+  background-color: blue;
+}
+.cloud:nth-of-type(3) .top, .cloud:nth-of-type(3) .bottom{
+  background-color: green;
 }
