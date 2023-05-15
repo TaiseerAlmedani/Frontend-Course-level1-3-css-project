@@ -3,10 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family:"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
-.navbar{
+.navbar {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -18,11 +19,11 @@ body{
   width: 100%;
   z-index: 4;
 }
-.logo img{
+.logo img {
   width: 40px;
   aspect-ratio: 1;
 }
-.logo{
+.logo {
   font-size: 40px;
   color: white;
   font-weight: 700;
@@ -30,41 +31,41 @@ body{
   align-items: center;
   gap: 10px;
 }
-.navbar ul{
-display: flex;
-align-items: center;
-gap: 15px;
-list-style-type: none;
+.navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  list-style-type: none;
 }
-.navbar ul a{
+.navbar ul a {
   color: white;
   text-decoration: none;
 }
-.navbar ul a:hover{
-opacity: .7;
+.navbar ul a:hover {
+  opacity: 0.7;
 }
-.nav-btn{
+.nav-btn {
   padding: 12px 36px;
   transition: all 400ms;
   border: solid 1px white;
   background-color: transparent;
   color: white;
 }
-.nav-btn:hover{
+.nav-btn:hover {
   background-color: white;
-  color: #6384FF;
+  color: #6384ff;
   cursor: pointer;
 }
 
 /*? Hero Section */
-.hero-section{
-  background-color: #6384FF;
+.hero-section {
+  background-color: #6384ff;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 150px 0;
 }
-.hero-content{
+.hero-content {
   color: white;
   font-size: 46px;
   font-weight: bold;
@@ -73,35 +74,48 @@ opacity: .7;
 
 /*? services-section */
 
-.services-section{
+.services-section {
   padding: 100px 0;
 }
-.services-section h1, .case-study-section h1{
+.services-section h1,
+.case-study-section h1,
+.pricing-section h1 {
   text-align: center;
-  margin:60px 0;
+  margin: 60px 0;
   font-size: 60px;
 }
 
-.services-section h1::after, .search-content h1::after, .case-study-section h1::after{
-  content: '';
+.services-section h1::after,
+.search-content h1::after,
+.case-study-section h1::after,
+.pricing-section h1::after {
+  content: "";
   display: block;
   width: 15%;
   margin: 30px auto 100px;
   height: 3px;
-  background: rgb(99,132,240);
-  background: linear-gradient(90deg, rgba(99,132,240,1) 0%, rgba(99,132,240,1) 83%, rgba(255,255,255,1) 83%, rgba(255,255,255,1) 91%, rgba(99,132,240,1) 91%, rgba(99,132,240,1) 100%);
+  background: rgb(99, 132, 240);
+  background: linear-gradient(
+    90deg,
+    rgba(99, 132, 240, 1) 0%,
+    rgba(99, 132, 240, 1) 83%,
+    rgba(255, 255, 255, 1) 83%,
+    rgba(255, 255, 255, 1) 91%,
+    rgba(99, 132, 240, 1) 91%,
+    rgba(99, 132, 240, 1) 100%
+  );
 }
-.search-content h1::after{
+.search-content h1::after {
   width: 30%;
   margin: 30px 0 20px;
 }
-.cards{
+.cards {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
-.card{
+.card {
   width: 30%;
   display: flex;
   flex-direction: column;
@@ -109,65 +123,65 @@ opacity: .7;
   gap: 50px;
   font-size: 1.5rem;
 }
-.card h2{
+.card h2 {
   color: #32325c;
 }
-.card p{
+.card p {
   padding: 10px;
   text-align: center;
 }
-.card img{
+.card img {
   width: 150px;
 }
 
 /*? search-engine-container */
-.search-content p{
+.search-content p {
   text-align: left;
-  margin:20px 0 60px;
+  margin: 20px 0 60px;
   font-size: 18px;
 }
-.search-container{
+.search-container {
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding: 50px 0;
 }
-.search-content a{
+.search-content a {
   text-decoration: none;
-  color: #6384FF;
+  color: #6384ff;
   padding: 12px 20px;
   font-weight: 500;
-  border: solid 1px #6384FF;
+  border: solid 1px #6384ff;
   transition: all 500ms;
 }
-.search-content a:hover{
-background-color: #6384FF;
-color: white;
+.search-content a:hover {
+  background-color: #6384ff;
+  color: white;
 }
 
 /*? case study section */
-.case-study-grid-container{
+.case-study-grid-container {
   max-width: 1200px;
   margin: 100px auto;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
-.item{
+.item {
   position: relative;
 }
-.item img{
+.item img {
   width: 100%;
   height: 100%;
 }
-.overlay{
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, 0.8);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -176,9 +190,9 @@ color: white;
   font-size: 18px;
   opacity: 0;
 }
-.overlay p:first-child::before{
+.overlay p:first-child::before {
   display: block;
-  content: '';
+  content: "";
   width: 70%;
   margin: 0 auto;
   height: 2px;
@@ -187,9 +201,9 @@ color: white;
   top: -50px;
   transition: all 300ms;
 }
-.overlay p:first-child::after{
+.overlay p:first-child::after {
   display: block;
-  content: '';
+  content: "";
   width: 70%;
   margin: 0 auto;
   height: 2px;
@@ -198,40 +212,43 @@ color: white;
   bottom: -75px;
   transition: all 300ms;
 }
-.overlay:hover p:first-child::before{
+.overlay:hover p:first-child::before {
   top: -25px;
 }
-.overlay:hover p:first-child::after{
+.overlay:hover p:first-child::after {
   bottom: -50px;
 }
-.item:hover .overlay{
+.item:hover .overlay {
   opacity: 1;
 }
-.overlay p:nth-child(2){
-  color: #6384FF;
+.overlay p:nth-child(2) {
+  color: #6384ff;
 }
 
-
 /*? pricing section */
-.pricing-container{
+.pricing-container {
   max-width: 1200px;
   margin: 100px auto;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-
-.card-top{
+.pricing-card{
+  padding: 0 20px;
+}
+.card-top {
   background-color: rgba(255, 166, 0, 0.352);
   text-align: center;
   position: relative;
+  color: white;
 }
-.card-top h1{
-  padding: 60px 0 100px;
+.card-top h2 {
+  padding: 60px 0 150px;
 }
 
-.card-top::before,.card-top::after{
-  content: '';
+.card-top::before,
+.card-top::after {
+  content: "";
   display: block;
   width: 250px;
   height: 200px;
@@ -239,33 +256,91 @@ color: white;
   background-color: white;
   position: absolute;
 }
-.card-top::before{
-
-  bottom: -75%;
+.card-top::before {
+  bottom: -50%;
   left: -5%;
 }
-.card-top::after{
-  bottom: -60%;
-  right: -5%;
+.card-top::after {
+  bottom: -30%;
+  right: -20%;
 }
-.pricing-card ul li, .card-top .price{
+.pricing-card ul li,
+.card-top .price {
   position: relative;
   z-index: 3;
 }
- .price{
-  width: 30%;
-  aspect-ratio: 1;
-  position: absolute !important;
-  border: solid 10px rgba(96, 94, 94, 0.2);
-  left: 50%;
-  top: 60%;
-  transform: translateX(-50%);
+.price {
+  width: 40%;
   margin: 0 auto;
-  /* background-color: rgba(65, 105, 225, 0.116); */
+  aspect-ratio: 1;
   border-radius: 50%;
+  background-color: white;
+  position: absolute !important;
+  box-shadow: 0 0 0 8px rgba(0, 0, 0, 0.3);
+  left: 50%;
+  transform: translateX(-50%);
+  top: 50%;
   display: flex;
   flex-direction: column;
-  background-color: white;
   justify-content: center;
   align-items: center;
+  color: black;
+  transition: all 500ms;
+}
+.pricing-card ul{
+  padding: 30px 20px 0;
+  line-height: 2;
+  list-style-type: none;
+}
+.pricing-card a{
+  text-decoration: none;
+  padding: 10px 20px;
+  border: solid 1px orange;
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+  text-align: center;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: 600;
+  transition: all 500ms;
+}
+.pricing-card:nth-of-type(1) a:hover{
+  background-color: orange;
+  color: white;
+}
+.pricing-card:nth-of-type(2) a:hover{
+  background-color: blue;
+  color: white;
+}
+.pricing-card:nth-of-type(3) a:hover{
+  background-color: green;
+  color: white;
+}
+.pricing-card:nth-of-type(2) a{
+  border-color: blue;
+}
+.pricing-card:nth-of-type(3) a{
+  border-color: green;
+}
+.pricing-card:nth-of-type(1) .card-top{
+  background-color: orange;
+}
+.pricing-card:nth-of-type(2) .card-top{
+  background-color: blue;
+}
+.pricing-card:nth-of-type(3) .card-top{
+  background-color: green;
+}
+.pricing-card:nth-of-type(1):hover .price{
+  background-color: orange;
+  color: white;
+}
+.pricing-card:nth-of-type(2):hover .price{
+  background-color: blue;
+  color: white;
+}
+.pricing-card:nth-of-type(3):hover .price{
+  background-color: green;
+  color: white;
 }

@@ -39,3 +39,9 @@
   width: 80%;
   margin: 0 auto;
 }
+.pricing-container{
+  grid-template-columns: 1fr;
+}
+.pricing-card:not(:last-child){
+margin-bottom: 30px;
+}
