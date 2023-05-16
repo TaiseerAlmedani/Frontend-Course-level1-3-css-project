@@ -58,3 +58,7 @@ margin-bottom: 30px;
 .cloud{
   padding: 0 30px;
 }
+.contact-section form{
+  grid-template-areas: 'name name' 'email email' 'phone phone' 'website website' 'message message' 'quote quote' 'icon iocn';
+  gap: 20px;
+}
